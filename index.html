@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart QR & Barcode Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Smart QR & Barcode Generator</h1>
+      <p>Create QR codes for links, videos, photos, Instagram, WiFi & more</p>
+    </header>
+    <main>
+      <input type="text" id="userInput" placeholder="Paste a URL, email, phone, WiFi, etc..." />
+      <div class="buttons">
+        <button onclick="generateCode()">Generate</button>
+        <button onclick="downloadImage()">Download</button>
+        <button onclick="copyInput()">Copy Input</button>
+        <button onclick="toggleTheme()">🌗 Toggle Theme</button>
+      </div>
+      <div id="output"></div>
+    </main>
+    <footer>
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Use</a>
+      <p>&copy; 2025 Smart QR Generator</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
